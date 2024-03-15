@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Assets/CSS/style1.css" rel="stylesheet" type="text/css">
+    <title>Get Registration Data</title>
+    </head>
+<body>
+    <h1>REGISTRATION DATA</h1>
+    <p id="firstname"></p>
+    <p id="lastname"></p>
+    <p id="email"></p>
+    <p id="password"></p>
+    <p id="confirm_password"></p>
+    
+    <script>
+        window.onload = function() {
+            function getURLParameter(name) {
+                var result = decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
+                return result === null ? 'Not provided' : result;
+            }
+
+            document.getElementById("firstname").innerHTML = "First Name: " + getURLParameter("firstname");
+            document.getElementById("lastname").innerHTML = "Last Name: " + getURLParameter("lastname");
+            document.getElementById("email").innerHTML = "Email: " + getURLParameter("email");
+            document.getElementById("password").innerHTML = "Password: " + getURLParameter("password");
+            document.getElementById("confirm_password").innerHTML = "Confirm Password: " + getURLParameter("confirm_password");
+            
+        }
+    </script>
+</body>
+</html>

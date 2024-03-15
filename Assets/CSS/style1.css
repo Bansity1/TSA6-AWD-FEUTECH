@@ -1,0 +1,33 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+body {
+    background: url("https://i.pinimg.com/originals/50/c7/38/50c738083fa2175842f6448e2e610b45.gif");
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #333;
+    padding: 10px;
+    text-align: center; 
+}
